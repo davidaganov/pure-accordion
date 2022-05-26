@@ -1,0 +1,138 @@
+.example {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.example__item {
+  padding: 15px 10px 15px 0;
+  border-bottom: 1px solid #D2D8D6;
+  transition: border-bottom .2s;
+}
+.example__item.active {
+  border-bottom: 2px solid green
+}
+.example__item.active .example__title {
+  color: green
+}
+.example__item.active .example__icon {
+  opacity: 1;
+}
+.example__item.active .example__icon::after,
+.example__item.active .example__icon::before {
+  transform: rotate(90deg);
+  transition: all 0.35s ease-in-out;
+}
+.example__item.active .example__icon::after {
+  opacity: 0
+}
+
+.example__header {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.example__title {
+  margin: 0;
+  color: black;
+  letter-spacing: .03em;
+}
+.example__title:focus-visible .example__icon::before,
+.example__title:focus-visible .example__icon::after {
+  background-color: green;
+}
+
+.example__body {
+  position: relative;
+  margin: 20px 0 30px 0;
+}
+.example__body::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  background-color: green;
+}
+
+.example__list {
+  padding: 0;
+  list-style: none;
+}
+.example__list-item,
+.example__text {
+  letter-spacing: .03em;
+  color: gray;
+  padding-left: 20px;
+  max-width: 87%;
+}
+
+.example__image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: min(85%, 250px);
+  padding-left: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.example__image img {
+  border-radius: inherit;
+}
+.example__subtitle {
+  margin-top: 5px;
+  text-align: center;
+  color: gray;
+}
+
+.example__icon {
+  position: relative;
+  display: block;
+  height: 16px;
+  width: 16px;
+  margin-right: 10px;
+  pointer-events: none;
+}
+.example__icon::before,
+.example__icon::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transform: rotate(-90deg);
+  transition: all 0.35s;
+}
+.example__icon::before {
+  width: 2px;
+  height: 16px;
+}
+.example__icon::after {
+  width: 16px;
+  height: 2px;
+}
+
+@media (min-width: 769px) {
+  .example__title {
+    font: bold 20px/29px "Roboto";
+  }
+  .example__list-item,
+  .example__text,
+  .example__subtitle {
+    font: normal 16px/23px "Roboto";
+  }
+}
+
+@media (max-width: 768px) {
+  .example__title {
+    font: bold 16px/25px "Roboto";
+  }
+  .example__list-item,
+  .example__text,
+  .example__subtitle {
+    font: normal 14px/21px "Roboto";
+  }
+}
