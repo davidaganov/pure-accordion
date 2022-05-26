@@ -1,26 +1,32 @@
 <template>
-  <section>
-    <!-- First example -->
-    <div class="example-wrapper">
-      <h2 class="example-title">Standart Mode</h2>
-      <p class="example-description">Allows multiple sections to be open at once</p>
-      <First-Example :list="list"/>
-    </div>
+  <div class="wrapper">
+    <header class="header">
+      <h1 class="title"><strong>Pure</strong> Accordion</h1>
+    </header>
 
-    <!-- Second example -->
-    <div class="example-wrapper">
-      <h2 class="example-title">Single Mode</h2>
-      <p class="example-description">Only one element can be active at a time</p>
-      <Second-Example :list="list"/>
-    </div>
+    <section>
+      <!-- First example -->
+      <div class="example-wrapper">
+        <h2 class="example-title">Standart Mode</h2>
+        <p class="example-description">Allows multiple sections to be open at once</p>
+        <First-Example :list="list"/>
+      </div>
 
-    <!-- Third example -->
-    <div class="example-wrapper">
-      <h2 class="example-title">Open by default</h2>
-      <p class="example-description">The specified number of items will be opened by default</p>
-      <Third-Example :list="list"/>
-    </div>
-  </section>
+      <!-- Second example -->
+      <div class="example-wrapper">
+        <h2 class="example-title">Single Mode</h2>
+        <p class="example-description">Only one element can be active at a time</p>
+        <Second-Example :list="list"/>
+      </div>
+
+      <!-- Third example -->
+      <div class="example-wrapper">
+        <h2 class="example-title">Open by default</h2>
+        <p class="example-description">The specified number of items will be opened by default</p>
+        <Third-Example :list="list"/>
+      </div>
+    </section>
+  </div>
 </template>
 
 <script>
@@ -65,12 +71,28 @@ export default {
 </script>
 
 <style>
-.example-wrapper {
+.wrapper {
   width: 80%;
   max-width: 1000px;
-  margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font: bold 32px "Roboto";
+  margin-bottom: 8px;
+}
+.title strong {
+  color: #41b883
+}
+
+.example-wrapper {
+  margin-top: 40px;
 }
 
 .example-wrapper:not(:last-of-type) {
