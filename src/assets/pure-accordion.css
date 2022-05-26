@@ -10,10 +10,10 @@
   transition: border-bottom .2s;
 }
 .example__item.active {
-  border-bottom: 2px solid green
+  border-bottom: 2px solid #41b883
 }
 .example__item.active .example__title {
-  color: green
+  color: #41b883
 }
 .example__item.active .example__icon {
   opacity: 1;
@@ -40,7 +40,7 @@
 }
 .example__title:focus-visible .example__icon::before,
 .example__title:focus-visible .example__icon::after {
-  background-color: green;
+  background-color: #41b883;
 }
 
 .example__body {
@@ -52,7 +52,7 @@
   position: absolute;
   height: 100%;
   width: 2px;
-  background-color: green;
+  background-color: #41b883;
 }
 
 .example__list {
