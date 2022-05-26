@@ -13,7 +13,7 @@ export default {
   props: {
     name: { type: String, default: undefined },
     single: { type: Boolean, default: false },
-    activeCount: { type: [Number, Boolean], default: false },
+    activeCount: { type: [Number, Boolean], default: false }
   },
 
   data() {
@@ -23,9 +23,9 @@ export default {
         count: 0,
         active: undefined,
         activeCount: this.activeCount,
-        single: this.single,
-      },
+        single: this.single
+      }
     };
-  },
+  }
 };
 </script>

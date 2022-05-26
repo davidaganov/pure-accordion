@@ -37,7 +37,7 @@ import ThirdExample from "./components/ThirdExample.vue";
 export default {
   name: "PureAccordion",
   components: {
-    FirstExample, SecondExample, ThirdExample,
+    FirstExample, SecondExample, ThirdExample
   },
 
   data() {
@@ -50,23 +50,23 @@ export default {
             "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
             "Laborum dolorum possimus accusamus incidunt.",
             "Animi, quod. Modi omnis iusto, quisquam ipsa deleniti",
-            "esse dolor iste deserunt quis, possimus explicabo?",
-          ],
+            "esse dolor iste deserunt quis, possimus explicabo?"
+          ]
         },
         {
           id: 2,
           title: "Text",
-          parph: "Lorem ipsum dolor. possimus accusamus incidunt. Animi, quod. Modi omnis iusto, quisquam ipsa deleniti esse dolor iste deserunt quis, possimus explicabo?",
+          parph: "Lorem ipsum dolor. possimus accusamus incidunt. Animi, quod. Modi omnis iusto, quisquam ipsa deleniti esse dolor iste deserunt quis, possimus explicabo?"
         },
         {
           id: 3,
           title: "Image",
           src: "https://picsum.photos/300/200",
-          subtitle: "Lorem ipsum dolor. possimus accusamus incidunt.",
-        },
-      ],
+          subtitle: "Lorem ipsum dolor. possimus accusamus incidunt."
+        }
+      ]
     };
-  },
+  }
 };
 </script>
 

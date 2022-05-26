@@ -47,12 +47,12 @@ import AccordionItem from "./AccordionItem.vue";
 
 export default {
   components: {
-    Accordion, AccordionItem,
+    Accordion, AccordionItem
   },
 
   props: {
-    list: { type: Array, required: true, default: () => [] },
-  },
+    list: { type: Array, required: true, default: () => [] }
+  }
 };
 </script>
 

@@ -43,7 +43,7 @@ export default {
     return {
       index: null,
       active: false,
-      name: this.accordion.name,
+      name: this.accordion.name
     };
   },
 
@@ -51,7 +51,7 @@ export default {
     single_active() {
       if (!this.accordion.single) return undefined;
       return this.index === this.accordion.active;
-    },
+    }
   },
 
   created() {
@@ -83,8 +83,8 @@ export default {
     },
     end(el) {
       el.style.height = "";
-    },
-  },
+    }
+  }
 };
 </script>
 
