@@ -1,7 +1,16 @@
 {
-  "name": "v-easy-accordion",
-  "version": "0.1.0",
-  "private": true,
+  "name": "pure-accordion",
+  "description": "A simple accordion for vue-2 with beautiful animation",
+  "version": "1.0.0",
+  "author": "David Aganov",
+  "license": "MIT",
+  "keywords": [
+    "vue",
+    "nuxt",
+    "accordion",
+    "component",
+    "module"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
