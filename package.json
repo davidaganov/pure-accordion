@@ -1,7 +1,7 @@
 {
   "name": "vue-pure-accordion",
   "description": "A simple accordion for vue-2 with beautiful animation",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": false,
   "author": {
     "name": "David Aganov",
@@ -10,8 +10,16 @@
   "repository": "https://github.com/davidaganov21/pure-accordion",
   "bugs": "https://github.com/davidaganov21/pure-accordion/issues",
   "license": "MIT",
-  "keywords": ["vue", "nuxt", "accordion", "component", "module"],
-  "files": ["dist/*"],
+  "keywords": [
+    "vue",
+    "nuxt",
+    "accordion",
+    "component",
+    "module"
+  ],
+  "files": [
+    "dist/*"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
