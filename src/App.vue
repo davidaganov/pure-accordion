@@ -35,7 +35,7 @@ import SecondExample from "./components/SecondExample.vue";
 import ThirdExample from "./components/ThirdExample.vue";
 
 export default {
-  name: `Pure${this.name}`,
+  name: "Pure Rating",
   components: {
     FirstExample, SecondExample, ThirdExample
   },
