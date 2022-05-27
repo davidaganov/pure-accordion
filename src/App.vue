@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <header class="header">
-      <h1 class="title"><strong>Pure</strong> Accordion</h1>
+      <h1 class="title"><strong>Pure</strong> {{ name }}</h1>
     </header>
 
     <section>
@@ -35,13 +35,15 @@ import SecondExample from "./components/SecondExample.vue";
 import ThirdExample from "./components/ThirdExample.vue";
 
 export default {
-  name: "PureAccordion",
+  name: `Pure${this.name}`,
   components: {
     FirstExample, SecondExample, ThirdExample
   },
 
   data() {
     return {
+      name: "Rating",
+
       list: [
         {
           id: 1,

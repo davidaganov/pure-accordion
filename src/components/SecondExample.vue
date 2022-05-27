@@ -57,5 +57,5 @@ export default {
 </script>
 
 <style>
-@import "../assets/pure-accordion.css";
+@import "../assets/pure-css.css";
 </style>
