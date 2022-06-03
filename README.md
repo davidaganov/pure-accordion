@@ -8,7 +8,7 @@ It has two modes of operation:
 ## Examples
 
 - [GitHub](https://github.com/davidaganov21/pure-accordion)
-- [CodeSandbox](https://codesandbox.io/s/pure-accordion-6x4zbf)
+- [CodeSandbox](https://codesandbox.io/s/pure-accordion-hfk0vm)
 
 ## Install
 
