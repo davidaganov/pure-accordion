@@ -19,8 +19,6 @@
   "repository": "https://github.com/davidaganov21/pure-accordion",
   "bugs": "https://github.com/davidaganov21/pure-accordion/issues",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "echo 'aganov.dev' > ./build/CNAME && gh-pages -d build",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
@@ -38,7 +36,6 @@
     "eslint": "^6.7.2",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-vue": "^6.2.2",
-    "vue-template-compiler": "^2.6.11",
-    "gh-pages": "^4.0.0"
+    "vue-template-compiler": "^2.6.11"
   }
 }
