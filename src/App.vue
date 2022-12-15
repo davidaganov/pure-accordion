@@ -9,35 +9,37 @@
       <div class="example-wrapper">
         <h2 class="example-title">Standart Mode</h2>
         <p class="example-description">Allows multiple sections to be open at once</p>
-        <First-Example :list="list"/>
+        <First-Example :list="list" />
       </div>
 
       <!-- Second example -->
       <div class="example-wrapper">
         <h2 class="example-title">Single Mode</h2>
         <p class="example-description">Only one element can be active at a time</p>
-        <Second-Example :list="list"/>
+        <Second-Example :list="list" />
       </div>
 
       <!-- Third example -->
       <div class="example-wrapper">
         <h2 class="example-title">Open by default</h2>
         <p class="example-description">The specified number of items will be opened by default</p>
-        <Third-Example :list="list"/>
+        <Third-Example :list="list" />
       </div>
     </section>
   </div>
 </template>
 
 <script>
-import FirstExample from "./components/FirstExample.vue";
-import SecondExample from "./components/SecondExample.vue";
-import ThirdExample from "./components/ThirdExample.vue";
+import FirstExample from "./components/FirstExample.vue"
+import SecondExample from "./components/SecondExample.vue"
+import ThirdExample from "./components/ThirdExample.vue"
 
 export default {
   name: "PureRating",
   components: {
-    FirstExample, SecondExample, ThirdExample
+    FirstExample,
+    SecondExample,
+    ThirdExample
   },
 
   data() {
@@ -58,7 +60,8 @@ export default {
         {
           id: 2,
           title: "Text",
-          parph: "Lorem ipsum dolor. possimus accusamus incidunt. Animi, quod. Modi omnis iusto, quisquam ipsa deleniti esse dolor iste deserunt quis, possimus explicabo?"
+          parph:
+            "Lorem ipsum dolor. possimus accusamus incidunt. Animi, quod. Modi omnis iusto, quisquam ipsa deleniti esse dolor iste deserunt quis, possimus explicabo?"
         },
         {
           id: 3,
@@ -67,9 +70,9 @@ export default {
           subtitle: "Lorem ipsum dolor. possimus accusamus incidunt."
         }
       ]
-    };
+    }
   }
-};
+}
 </script>
 
 <style>
@@ -90,7 +93,7 @@ export default {
   margin-bottom: 8px;
 }
 .title strong {
-  color: #41b883
+  color: #41b883;
 }
 
 .example-wrapper {
