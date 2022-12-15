@@ -1,21 +1,29 @@
 <template>
-  <accordion class="example" name="example" :activeCount="1">
-
+  <accordion
+    class="example"
+    name="example"
+    :activeCount="1"
+  >
     <accordion-item
       class="example__item"
-      v-for="item in list" :key="item.id"
+      v-for="item in list"
+      :key="item.id"
     >
       <template #accordion-title>
-        <h4 class="example__title"> {{ item.title }} </h4>
+        <h4 class="example__title">{{ item.title }}</h4>
       </template>
       <template #accordion-icon>
         <span class="example__icon"></span>
       </template>
       <template #accordion-content>
-        <ul class="example__list" v-if="item.list">
+        <ul
+          class="example__list"
+          v-if="item.list"
+        >
           <li
             class="example__list-item"
-            v-for="text in item.list" :key="text"
+            v-for="text in item.list"
+            :key="text"
           >
             {{ text }}
           </li>
@@ -32,28 +40,31 @@
           class="example__image"
           v-else-if="item.src"
         >
-          <img :src="item.src" :alt="item.subtitle">
+          <img
+            :src="item.src"
+            :alt="item.subtitle"
+          />
           <span class="example__subtitle">{{ item.subtitle }}</span>
         </div>
       </template>
     </accordion-item>
-
   </accordion>
 </template>
 
 <script>
-import Accordion from "./Accordion.vue";
-import AccordionItem from "./AccordionItem.vue";
+import Accordion from "./Accordion.vue"
+import AccordionItem from "./AccordionItem.vue"
 
 export default {
   components: {
-    Accordion, AccordionItem
+    Accordion,
+    AccordionItem
   },
 
   props: {
     list: { type: Array, required: true, default: () => [] }
   }
-};
+}
 </script>
 
 <style>

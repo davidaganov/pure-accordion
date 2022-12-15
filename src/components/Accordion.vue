@@ -1,13 +1,13 @@
 <template>
-<ul class="accordion">
-  <slot/>
-</ul>
+  <ul class="accordion">
+    <slot />
+  </ul>
 </template>
 
 <script>
 export default {
   provide() {
-    return { accordion: this.accordion };
+    return { accordion: this.accordion }
   },
 
   props: {
@@ -25,7 +25,7 @@ export default {
         activeCount: this.activeCount,
         single: this.single
       }
-    };
+    }
   }
-};
+}
 </script>
