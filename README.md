@@ -7,7 +7,7 @@ It has two modes of operation:
 
 ## Examples
 
-- [GitHub](https://github.com/davidaganov21/pure-accordion)
+- [GitHub](https://github.com/davidaganov/pure-accordion)
 - [Demo](https://aganov.dev/pure-accordion)
 
 ## Install
