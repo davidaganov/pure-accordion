@@ -15,7 +15,7 @@ It has two modes of operation:
 #### NPM / Yarn
 
 ```
-git clone https://github.com/davidaganov21/pure-accordion
+git clone https://github.com/davidaganov/pure-accordion
 cd pure-accordion
 npm install
 ```
@@ -79,4 +79,4 @@ By passing your class to the name parameter, you will set custom classes for the
 
 ## Credits
 
-Author: [David Aganov](https://github.com/davidaganov21)
+Author: [David Aganov](https://github.com/davidaganov)
